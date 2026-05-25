@@ -7,7 +7,6 @@ cd "$(dirname "$0")"
 
 echo "============================================================"
 echo "  LIFE-LINK Smart Traffic System — Demo Runner"
-echo "  Saumya Sharma & Pulkit Pandey | JIIT Noida"
 echo "============================================================"
 
 # Check Python

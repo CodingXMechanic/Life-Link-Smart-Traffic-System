@@ -189,37 +189,6 @@ timestamp,vehicle_id,zone_id,lane_id,wait_time,event
 1700000021.750,SYSTEM,Alpha,east,0.0,recovery_start:east
 ```
 
----
-
-## Verification Checklist
-
-### Saumya's PR Checklist
-- [ ] `pytest tests/test_physics.py -v` — all kinematic tests pass
-- [ ] `pytest tests/test_packet.py -v` — all packet/broker tests pass
-- [ ] `python scripts/generate_sample_csv.py` — CSV generated in `logs/`
-- [ ] `python scripts/generate_charts.py` — 4 charts in `output/`
-- [ ] Broker interface: `publish(dict)` and `get_packets() -> List[dict]` stable
-- [ ] Vehicle exposes: `update(dt)`, `to_packet()`, `broadcast()`
-- [ ] Hand `docs/API.md` to Pulkit
-
-### Pulkit's PR Checklist
-- [ ] `pytest tests/test_controller.py -v` — FSM + fail-safe tests pass
-- [ ] `pytest tests/test_preemption.py -v` — preemption + integration tests pass
-- [ ] No simultaneous GREEN confirmed over 200-step run
-- [ ] 3-second yellow enforced in preemption path
-- [ ] Recovery phase activates after emergency clears
-- [ ] `python -m src.ui.pygame_ui` — Pygame window opens with 4 zones visible
-- [ ] `python scripts/run_analysis.py` — comparison charts generated
-
-### Joint Integration Checklist
-- [ ] `pytest tests/ -v` — all 25+ tests pass
-- [ ] `python scripts/run_demo_headless.py` — 30-second headless run completes
-- [ ] Ambulance preempts intersection within ETA window
-- [ ] `output/live_state.json` updates during Pygame simulation
-- [ ] CSV log contains preemption events
-
----
-
 ## Configuration (src/config.py)
 
 All constants are centralized:

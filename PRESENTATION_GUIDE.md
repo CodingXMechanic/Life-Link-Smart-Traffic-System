@@ -1,6 +1,4 @@
-# Life-Link — Viva Presentation Guide
-
-## What you will demonstrate (step by step)
+## What you should demonstrate (step by step)
 
 ### WINDOW 1 — Pygame simulation (full screen, projected)
 ### WINDOW 2 — Live HTML dashboard (browser)
@@ -9,9 +7,6 @@
 Run all three with ONE command:
     python present.py
 
----
-
-## Full Setup (Day of Viva)
 
 1. Install once:
    pip install pygame numpy matplotlib
@@ -27,9 +22,6 @@ Run all three with ONE command:
    SPACE — pause to explain a concept
    Q   — quit
 
----
-
-## What each examiner will see
 
 ### Simulation Panel (left side of Pygame)
 - 4 intersections running simultaneously (Alpha, Beta, Gamma, Delta)
@@ -54,4 +46,3 @@ Run all three with ONE command:
 - All 4 zones, signal states, emergency alerts
 - Lane occupancy heatmap
 - Event log
-

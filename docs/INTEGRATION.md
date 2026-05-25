@@ -1,7 +1,5 @@
 # Life-Link Integration Guide
 
-## How to integrate Saumya's modules with Pulkit's controller
-
 ### Step 1 — Import and instantiate
 
 ```python
@@ -65,8 +63,3 @@ thread = threading.Thread(target=run_simulation, daemon=True)
 thread.start()
 ```
 
-### Commit checklist
-- [ ] Saumya: `src/vehicle/`, `src/comm/broker.py`, `src/logging/logger.py`
-- [ ] Pulkit: `src/controller/`, `src/ui/pygame_ui.py`, `src/analysis/compare.py`
-- [ ] Shared: `src/config.py` (single source of truth for all constants)
-- [ ] Both: `tests/` — all tests pass (`pytest tests/ -v`)
