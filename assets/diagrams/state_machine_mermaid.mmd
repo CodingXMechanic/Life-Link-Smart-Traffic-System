@@ -1,0 +1,16 @@
+stateDiagram-v2
+    [*] --> NS_GREEN
+
+    NS_GREEN --> NS_YELLOW : phase_timer >= adaptive_green OR emergency
+    NS_YELLOW --> EW_GREEN : yellow >= 3s (normal)
+    NS_YELLOW --> ALL_RED  : yellow >= 3s (preemption)
+
+    EW_GREEN --> EW_YELLOW : phase_timer >= adaptive_green OR emergency
+    EW_YELLOW --> NS_GREEN : yellow >= 3s (normal)
+    EW_YELLOW --> ALL_RED  : yellow >= 3s (preemption)
+
+    ALL_RED --> EMERGENCY : emergency_lane active
+    ALL_RED --> RECOVERY  : emergency cleared
+    EMERGENCY --> ALL_RED : ambulance clears
+    RECOVERY --> NS_GREEN : recovery lane = NS
+    RECOVERY --> EW_GREEN : recovery lane = EW
