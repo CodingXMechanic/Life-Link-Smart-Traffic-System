@@ -1,11 +1,18 @@
-# 🚦 Life-Link: Smart Traffic System for Emergency Vehicle Priority
+# 🚦 Life-Link Smart Traffic System
 
-> **B.Tech ECE Minor Project – II | JIIT Noida**
-> Saumya Sharma (23102156) · Pulkit Pandey (23102211)
-> Supervisor: Dr. Rahul Kaushik
+A Smart City traffic management simulation using V2I Communication, Adaptive Signal Optimization, Emergency Vehicle Priority, and Real-Time Monitoring Dashboard.
 
----
+## Features
+- 🚑 Emergency Vehicle Green Corridor
+- 🚦 Adaptive Traffic Signals
+- 🌆 Multi-Zone Smart City Simulation
+- 📡 V2I Packet Communication
+- 📊 Real-Time Dashboard
+- 🎮 Pygame Visualization
+- 📈 Traffic Analytics & Comparison
 
+## Tech Stack
+Python, Pygame, NumPy, Matplotlib, HTML, CSS, JavaScript
 ## Overview
 
 Life-Link is a complete Python simulation of a **V2I (Vehicle-to-Infrastructure)** smart traffic system featuring:
